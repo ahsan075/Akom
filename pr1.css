@@ -1,0 +1,70 @@
+.list>a{
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 15px 0 15px 0;
+    transition: 0.3s;
+    position: absolute;
+}
+.list:hover>a{
+    color:gray;
+    font-size: 20px;
+    border-radius: 0 15px 0 15px;
+}
+.list{
+    list-style: none;
+    display: inline-block;
+    width: 80px;
+    margin: 5px;
+    text-align: center;
+}
+ul{
+    display: flex;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background: rgba(126, 6, 126, 0.39);
+    position: ;
+}
+.logo{
+   text-decoration: none;
+   font-weight: 900;
+   margin-top: 15px;
+}
+.dropdown a{
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: wheat;
+    padding: 8px;
+}
+.dropdown{
+    position: absolute;
+    top: 85px;
+    background: red;
+    width: 100px;
+    margin-left: 25px;
+    border-radius: 10px;
+    display: none;
+}
+.dropdown::after{
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent transparent blue transparent;
+    left: 40px;
+    top: -20px;
+}
+.dropdown a:hover{
+    background-color: rgba(16, 16, 216, 0.411);
+    border-radius: 10px;
+    color: #000;
+}
+.list:hover .dropdown{
+    display: block;
+}
